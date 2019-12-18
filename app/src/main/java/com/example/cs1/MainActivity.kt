@@ -36,4 +36,9 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
+    fun main()
+    {
+        println("hello world")
+    }
 }
