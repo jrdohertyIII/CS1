@@ -5,6 +5,7 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -37,9 +38,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun main()
+    fun showCards(view: View)
     {
-        println("hello world")
+        Snackbar.make(view, "Button pressed", Snackbar.LENGTH_LONG).setAction("Action", null).show()
     }
 //comment
+    //another comment
 }
